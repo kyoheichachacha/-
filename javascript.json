@@ -1,0 +1,75 @@
+{
+	"click_function": {
+		"prefix": "click",
+		"body": [
+			"/*-----------------------------------------",
+    		"$1_click_function",
+			"------------------------------------------*/",
+			"$(function(){",
+			"	$('$1').on('click', function(){",
+			"		if($('$1').hasClass('open')){",
+			"			$('$1').removeClass('open');",
+			"		}else {",
+			"			 $('$1').addClass('open');",
+			"		}",
+			"	});",
+			"});",
+		]
+	},
+
+	"fadeIn_function": {
+		"prefix": "scroll_fadeIn",
+		"body": [
+			"/*-----------------------------------------",
+    		"$1_scroll_fadeIn_function",
+			"------------------------------------------*/",
+			"$(function(){",
+			"	$('window').on('scroll', function(){",
+			"		$('.fadeIn').each(function() {",
+			"			var pos = $(this).offset().top;",
+			"			var scroll = $(window).scrollTop()",
+			"			var winH = $(window).height();",
+			"			if (scroll > pos - winH + 100){",
+			"				$(this).addClass('active');",
+			"			}",
+			"		});",
+			"	});",
+			"});",
+		]
+	},
+
+	"Swiper": {
+		"prefix": "swiper",
+		"body": [
+			"/*-----------------------------------------",
+    		"swiper",
+			"------------------------------------------*/",
+			"const swiper = new Swiper(\".swiper\", {",
+				"loop: true, //ループ",
+				"autoplay: false, //自動再生",
+				"slidesPerView: 1,// 表示されるスライドの枚数",
+				"spaceBetween: 0,// スライド間の余白(px)",
+				"navigation: { //進む・戻るボタン",
+				"	nextEl: \".swiper-button-next\",",
+				"	prevEl: \".swiper-button-prev\",",
+				"},",
+				"pagination: {",
+				"	el: \".swiper-pagination\",",
+				"	clickable: false,// ページネーションのクリック",
+				"}",
+				"effect: 'fade', //スライドアニメの種類",
+				"fadeEffect: {",
+				"	crossFade: true // effect: fade時スライドが重ならない設定",
+				" },",
+				"speed: 1000, //スライド切り替えのスピードの指定(ミリ秒)",
+				"autoHeight: false, // スライドごとの高さ",
+				"breakpoints: {// レスポンシブ切り替え",
+				"	768: {// ",
+				"		slidesPerView: 5, // 768px以上では5枚表示",
+				"	},",
+				"}",
+			"});",
+		]
+	},
+
+}
