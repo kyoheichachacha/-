@@ -1,0 +1,51 @@
+{
+		// html1
+		"html1": {
+			"prefix": "basehtml",
+			"body": [
+				"<!DOCTYPE html>",
+				"<html lang=\"ja\">",
+				"	<head>",
+				"		<meta charset=\"UTF-8\">",
+				"		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+				"		<title>$1</title>",
+				"		<link rel=\"icon\" href=\"img/\">",
+				"		<link rel=\"stylesheet\" href=\"css/style.css\">",
+				"		<link href=\"https://use.fontawesome.com/releases/v5.15.4/css/all.css\" rel=\"stylesheet\">",
+	
+				"		<script src=\"https://code.jquery.com/jquery-3.7.1.min.js\"></script>",
+				"		<script src=\"js/main.js\" defer></script>",
+				"	</head>",
+				"	<body>",
+				"		<header id=\"header\" class=\"header\">",
+				"		</header>",
+				"		<main>",
+				"			<section id=\"$2\">"
+				"				<div class=\"$2\">"
+				"				</div>"
+				"			</section>"
+				"		</main>",
+				"		<footer>",
+				"		</footer>",
+				"	</body>",
+				"</html>"
+			]
+		},
+		// swiper
+		"Swiper": {
+			"prefix": "swiper",
+			"body": [
+				"			<div class=\"swiper\">"
+				"				<div class=\"swiper-wrapper\">"
+				"					<div class=\"swiper-slide\">"
+				"					</div>"
+				"				</div>"
+				"				<!-- ページネーション -->"
+				"				<div class=\"swiper-pagination\"></div>"
+				"				<!--  前後の矢印 -->"
+				"				<div class=\"swiper-button-prev\"></div>"
+				"				<div class=\"swiper-button-next\"></div>"
+				"			</div>"
+			]
+		}
+}
